@@ -9,7 +9,7 @@ for (const iterator of anchor) {
 
     if (e.target.dataset.key == "equal") {
       // console.log(screen);//-> return element div with numbers
-      // console.log(screen.textContent); // -> return screen text
+      console.log(screen.textContent); // -> return screen text
       screen.textContent = eval(screen.textContent); // -> Eval allows to execute a chain of code
       console.log(screen.textContent); // log result of operation
     } else if (e.target.dataset.key == "clear") {
@@ -20,5 +20,10 @@ for (const iterator of anchor) {
     }
   });
 }
+
+// console.log(eval(5+5));
+// console.log(eval(5*5));
+// console.log(eval(5/5));
+
 
 // Data atribute allows to save data in html elements
